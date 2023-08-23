@@ -1,0 +1,3 @@
+C:/Users/32864/Desktop/test/build/CMakeFiles/myprint.dir
+C:/Users/32864/Desktop/test/build/CMakeFiles/edit_cache.dir
+C:/Users/32864/Desktop/test/build/CMakeFiles/rebuild_cache.dir

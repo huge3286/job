@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Users/32864/Desktop/test/build",
+  "command": "D:\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  @CMakeFiles/myprint.dir/includes_CXX.rsp -g -o CMakeFiles\\myprint.dir\\src\\main.cc.obj -c C:\\Users\\32864\\Desktop\\test\\src\\main.cc",
+  "file": "C:/Users/32864/Desktop/test/src/main.cc"
+},
+{
+  "directory": "C:/Users/32864/Desktop/test/build",
+  "command": "D:\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  @CMakeFiles/myprint.dir/includes_CXX.rsp -g -o CMakeFiles\\myprint.dir\\src\\print.cc.obj -c C:\\Users\\32864\\Desktop\\test\\src\\print.cc",
+  "file": "C:/Users/32864/Desktop/test/src/print.cc"
+}
+]
