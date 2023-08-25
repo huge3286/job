@@ -1,31 +1,32 @@
-n, m = map(int, input().split())  # n个电子元件 m对电子元件分数
+""" 读取数据 建图 """
+n, m = map(int, input().split())
 
-g = [[] for i in range(n)]
+edges = []
 for i in range(m):
-    u, v, num = map(int, input().split())
-    g[u - 1].append((v - 1, num))
-    g[v - 1].append((u - 1, num))
+    x, y, c = map(int, input().split())
+    edges.append([x - 1, y - 1, c])
 
 
-def bfs(cur, visited):
-    queue = [(cur, 0, visited)]  # 初始节点、分数和visited
-    max_score = 0
-
-    while queue:
-        cur, score, cur_visited = queue.pop(0)
-        max_score = max(max_score, score)
-        cur_visited |= 1 << cur  # 更新当前节点的访问状态
-
-        for nxt, cre in g[cur]:
-            if not (cur_visited & (1 << nxt)):
-                queue.append((nxt, score + cre, cur_visited))
-
-    return max_score
+""" 并查集模板 """
+fa = list(range(n))
 
 
+def find(x):
+    return x if fa[x] == x else find(fa[x])
+
+
+""" 按照积分从大到小枚举 """
 ans = 0
-for i in range(n):
-    visited = 0  # 使用整数来表示访问状态
-    ans = max(ans, bfs(i, visited))
+cnt = 1
+for x, y, c in sorted(edges, key=lambda x: x[2], reverse=True):
+    fx, fy = map(find, (x, y))
+    if fx != fy:
+        ans += c
+        cnt += 1
+        fa[x] = fy
 
-print(ans)
+    if cnt == n:
+        print(ans)
+        exit()
+
+print("No solution.")
