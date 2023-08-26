@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
+// 利用递归的层级结构 来从底层开始往回递推dp数组
+
 void solve() {
     int n;
     cin >> n;
@@ -14,7 +16,7 @@ void solve() {
     // dp[i]表示节点i能吃到脑子的个数，nxt[i]表示i要传送到下一个的节点编号
     int dp[n], nxt[n];
     // 这个函数就是返回最小的节点编号
-    function<int(int,int )> dfs = [&] (int x, int fa) ->int{
+    function<int(int, int)> dfs = [&] (int x, int fa) ->int{
         // mi表示最小节点编号 初始化为1e6
         int mi = 1e6;
         // 先递归到最底层 拿到最小序号
