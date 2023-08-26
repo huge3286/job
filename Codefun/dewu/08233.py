@@ -1,46 +1,32 @@
-import sys
+""" 读取数据 建图 """
+n, m = map(int, input().split())
+
+edges = []
+for i in range(m):
+    x, y, c = map(int, input().split())
+    edges.append([x - 1, y - 1, c])
 
 
-class Node:
-    def __init__(self, u, v, w):
-        self.u = u
-        self.v = v
-        self.w = w
-
-    def __lt__(self, other):
-        return self.w > other.w
+""" 并查集模板 """
+fa = list(range(n))
 
 
 def find(x):
     return x if fa[x] == x else find(fa[x])
 
 
-def merge(x, y):
-    fx = find(x)
-    fy = find(y)
+""" 按照积分从大到小枚举 """
+ans = 0
+cnt = 1
+for x, y, c in sorted(edges, key=lambda x: x[2], reverse=True):
+    fx, fy = map(find, (x, y))
     if fx != fy:
+        ans += c
+        cnt += 1
         fa[fx] = fy
 
+    if cnt == n:
+        print(ans)
+        exit()
 
-if __name__ == "__main__":
-    n, m = map(int, sys.stdin.readline().split())
-    e = [Node(0, 0, 0) for i in range(0, m)]
-    for i in range(0, m):
-        u, v, w = map(int, sys.stdin.readline().split())
-        e[i] = Node(u, v, w)
-    fa = [i for i in range(0, m + 1)]
-    e.sort()
-    cnt = 1
-    ans = 0
-    for i in range(0, m):
-        u = e[i].u
-        v = e[i].v
-        w = e[i].w
-        if find(u) != find(v):
-            merge(u, v)
-            cnt += 1
-            ans += w
-            if cnt == n:
-                print(ans)
-                exit()
-    print("No solution.")
+print("No solution.")

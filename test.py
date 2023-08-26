@@ -23,7 +23,7 @@ for x, y, c in sorted(edges, key=lambda x: x[2], reverse=True):
     if fx != fy:
         ans += c
         cnt += 1
-        fa[x] = fy
+        fa[fx] = fy
 
     if cnt == n:
         print(ans)
