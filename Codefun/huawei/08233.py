@@ -22,14 +22,9 @@ while q:
             continue
 
         res[x][y] = t
-        nt = t + g[x][y]
 
         for dx, dy in dir:
-            nx, ny = x + dx, y + dy
-            if -1 < nx < m and -1 < ny < n and g[x][y] != 0:
-                if nt >= res[nx][ny]:
-                    continue
-                q.append([nx, ny, nt])
+            q.append([x + dx, y + dy, t + g[x][y]])
 
 ans = 0
 out_flag = 0
