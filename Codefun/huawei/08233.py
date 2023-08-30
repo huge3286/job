@@ -8,30 +8,32 @@ for i in range(m):
 
 dir = [[1, 0], [0, 1], [-1, 0], [0, -1]]
 
-res = [[float("inf")] * n for _ in range(m)]
+time = [[float("inf")] * n for _ in range(m)]
+time[x][y] = 0
 
 # bfs
 from collections import deque
 
-q = deque([[x, y, 0]])
+q = deque([[x, y]])
 while q:
-    x, y, t = q.popleft()
-
-    if -1 < x < m and -1 < y < n and g[x][y] != 0:
-        if t >= res[x][y]:
+    x, y = q.popleft()
+    for dx, dy in dir:
+        nx = x + dx
+        ny = y + dy
+        if nx < 0 or nx > m - 1 or ny < 0 or ny > n - 1 or g[nx][ny] == 0:
             continue
+        nt = time[x][y] + g[x][y]  # 到达下一个节点的时间
+        if time[nx][ny] > nt:
+            time[nx][ny] = nt
+            q.append([nx, ny])
 
-        res[x][y] = t
-
-        for dx, dy in dir:
-            q.append([x + dx, y + dy, t + g[x][y]])
 
 ans = 0
 out_flag = 0
 for i in range(m):
     for j in range(n):
-        if res[i][j] < float("inf"):
-            ans = max(ans, res[i][j])
+        if time[i][j] < float("inf"):
+            ans = max(ans, time[i][j])
         elif g[i][j] > 0:
             ans = -1
             out_flag = 1
