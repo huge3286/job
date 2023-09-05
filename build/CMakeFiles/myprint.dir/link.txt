@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/myprint.dir/src/main.cc.o CMakeFiles/myprint.dir/src/print.cc.o  -o /data_new/home/hzx/test/project/job/Deploy/CMakeExample/bin/myprint 
