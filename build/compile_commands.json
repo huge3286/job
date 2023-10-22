@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/code/job/build",
-  "command": "/usr/bin/g++ -O3 -DNDEBUG -o CMakeFiles/test.dir/test.cc.o -c /home/code/job/test.cc",
-  "file": "/home/code/job/test.cc"
-}
-]

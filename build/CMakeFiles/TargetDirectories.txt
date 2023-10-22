@@ -1,3 +1,0 @@
-/home/code/job/build/CMakeFiles/test.dir
-/home/code/job/build/CMakeFiles/edit_cache.dir
-/home/code/job/build/CMakeFiles/rebuild_cache.dir
