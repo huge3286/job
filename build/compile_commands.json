@@ -1,12 +1,7 @@
 [
 {
-  "directory": "/data_new/home/hzx/test/project/job/build",
-  "command": "/usr/bin/g++   -I/data_new/home/hzx/test/project/job/Deploy/CMakeExample/header  -g   -o CMakeFiles/myprint.dir/src/main.cc.o -c /data_new/home/hzx/test/project/job/Deploy/CMakeExample/src/main.cc",
-  "file": "/data_new/home/hzx/test/project/job/Deploy/CMakeExample/src/main.cc"
-},
-{
-  "directory": "/data_new/home/hzx/test/project/job/build",
-  "command": "/usr/bin/g++   -I/data_new/home/hzx/test/project/job/Deploy/CMakeExample/header  -g   -o CMakeFiles/myprint.dir/src/print.cc.o -c /data_new/home/hzx/test/project/job/Deploy/CMakeExample/src/print.cc",
-  "file": "/data_new/home/hzx/test/project/job/Deploy/CMakeExample/src/print.cc"
+  "directory": "/home/code/job/build",
+  "command": "/usr/bin/g++ -O3 -DNDEBUG -o CMakeFiles/test.dir/test.cc.o -c /home/code/job/test.cc",
+  "file": "/home/code/job/test.cc"
 }
 ]

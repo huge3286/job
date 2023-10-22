@@ -1,0 +1,4 @@
+/home/code/job/new/advance/sort/build/CMakeFiles/SortAlgorithnmTest.dir
+/home/code/job/new/advance/sort/build/CMakeFiles/test.dir
+/home/code/job/new/advance/sort/build/CMakeFiles/edit_cache.dir
+/home/code/job/new/advance/sort/build/CMakeFiles/rebuild_cache.dir

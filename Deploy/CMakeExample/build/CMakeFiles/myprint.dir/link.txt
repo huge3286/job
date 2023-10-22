@@ -1,3 +1,0 @@
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E rm -f CMakeFiles\myprint.dir/objects.a
-D:\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\mingw64\bin\ar.exe qc CMakeFiles\myprint.dir/objects.a @CMakeFiles\myprint.dir\objects1
-D:\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\myprint.dir/objects.a -Wl,--no-whole-archive -o C:\Users\32864\Desktop\test\bin\myprint.exe -Wl,--out-implib,C:\Users\32864\Desktop\test\bin\libmyprint.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\myprint.dir\linkLibs.rsp

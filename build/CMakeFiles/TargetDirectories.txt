@@ -1,3 +1,3 @@
-/data_new/home/hzx/test/project/job/build/CMakeFiles/edit_cache.dir
-/data_new/home/hzx/test/project/job/build/CMakeFiles/rebuild_cache.dir
-/data_new/home/hzx/test/project/job/build/CMakeFiles/myprint.dir
+/home/code/job/build/CMakeFiles/test.dir
+/home/code/job/build/CMakeFiles/edit_cache.dir
+/home/code/job/build/CMakeFiles/rebuild_cache.dir

@@ -71,7 +71,29 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "valarray": "cpp",
-        "charconv": "cpp"
+        "charconv": "cpp",
+        "ranges": "cpp",
+        "span": "cpp",
+        "__bit_reference": "cpp",
+        "__hash_table": "cpp",
+        "__split_buffer": "cpp",
+        "__tree": "cpp",
+        "any": "cpp",
+        "barrier": "cpp",
+        "bit": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "coroutine": "cpp",
+        "source_location": "cpp",
+        "latch": "cpp",
+        "numbers": "cpp",
+        "semaphore": "cpp",
+        "stop_token": "cpp",
+        "syncstream": "cpp",
+        "variant": "cpp",
+        "__nullptr": "cpp",
+        "queue": "cpp",
+        "stack": "cpp"
     },
-    "cmake.sourceDirectory": "/data_new/home/hzx/test/project/job/Deploy/CMakeExample"
+    "cmake.sourceDirectory": "/home/code/job"
 }

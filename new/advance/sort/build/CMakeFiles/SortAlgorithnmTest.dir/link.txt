@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/SortAlgorithnmTest.dir/main.cc.o CMakeFiles/SortAlgorithnmTest.dir/sort.cc.o -o SortAlgorithnmTest  /usr/local/lib/libgtest.a 
