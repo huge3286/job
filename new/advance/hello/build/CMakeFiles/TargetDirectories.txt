@@ -1,3 +1,0 @@
-/home/code/job/new/advance/hello/build/CMakeFiles/HelloWorld.dir
-/home/code/job/new/advance/hello/build/CMakeFiles/edit_cache.dir
-/home/code/job/new/advance/hello/build/CMakeFiles/rebuild_cache.dir
